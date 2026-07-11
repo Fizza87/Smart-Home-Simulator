@@ -1,4 +1,4 @@
-# 🏠 Smart Home Simulator
+# Smart Home Simulator
 
 A JavaFX desktop application that simulates the management and automation of smart devices inside a modern home — built as a comprehensive Object-Oriented Programming (OOP) project.
 
@@ -6,13 +6,13 @@ The application allows users to control different rooms and smart devices such a
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Smart Home Simulator mimics the behavior of real-world smart home systems like Google Home or Apple Home. Users can register/login, create rooms, add different types of devices to those rooms, control device states, set up automation rules (IF-trigger THEN-action), and monitor real-time energy consumption — all through a fully navigable multi-screen JavaFX interface.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Implement and demonstrate all major OOP concepts in a real application
 - Build a modular, scalable Java application with clean package separation
@@ -22,7 +22,7 @@ Smart Home Simulator mimics the behavior of real-world smart home systems like G
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -36,7 +36,7 @@ Smart Home Simulator mimics the behavior of real-world smart home systems like G
 
 ---
 
-## 🧩 OOP Concepts Demonstrated
+## OOP Concepts Demonstrated
 
 | Concept | Where it's applied |
 |---|---|
@@ -50,7 +50,7 @@ Smart Home Simulator mimics the behavior of real-world smart home systems like G
 
 ---
 
-## 🖥 Application Screens
+## Application Screens
 
 1. **Login** — Authenticate with a registered username/password
 2. **Sign Up** — Register a new account (Name, Username, Email, Password)
@@ -63,7 +63,7 @@ Smart Home Simulator mimics the behavior of real-world smart home systems like G
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 SmartHomeSimulator/
@@ -125,7 +125,7 @@ SmartHomeSimulator/
 
 ---
 
-## 🔑 Core Features
+## Core Features
 
 - ✅ User registration & authentication
 - ✅ Add / remove rooms dynamically
@@ -141,7 +141,7 @@ SmartHomeSimulator/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - JDK 21
@@ -156,21 +156,16 @@ cd SmartHomeSimulator
 mvn clean javafx:run
 ```
 
----
-
-## 📸 Screenshots
-
-> _Add your screenshots here — Dashboard, Rooms, Devices, Automation, and Energy Monitor screens._
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Fizza**
 Software Engineering Undergraduate
 
 ---
 
-## 📄 License
+## License
 
 This project was created for academic purposes as part of an Object-Oriented Programming course.
