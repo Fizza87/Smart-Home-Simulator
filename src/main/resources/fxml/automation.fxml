@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="app.controller.AutomationController">
+
+    <!-- Background layer -->
+    <Pane fx:id="automationBackgroundPane" />
+
+    <!-- Dim overlay -->
+    <Pane style="-fx-background-color: rgba(0,0,0,0.5);" />
+
+    <!-- Content -->
+    <BorderPane>
+
+        <top>
+            <VBox alignment="CENTER" spacing="5.0">
+                <padding>
+                    <Insets top="20.0" bottom="10.0" />
+                </padding>
+                <Label text="Automation Rules" styleClass="dashboard-title" />
+            </VBox>
+        </top>
+
+        <center>
+            <VBox alignment="TOP_CENTER" spacing="15.0">
+                <padding>
+                    <Insets top="10.0" left="40.0" right="40.0" bottom="10.0" />
+                </padding>
+
+                <ListView fx:id="rulesListView" prefHeight="250.0" maxWidth="600.0" styleClass="solid-box"/>
+
+                <Label text="Create New Rule" styleClass="section-title" />
+
+                <HBox alignment="CENTER" spacing="8.0">
+                    <Label text="IF" styleClass="condition-label" />
+                    <ComboBox fx:id="triggerDeviceComboBox" promptText="Trigger device" prefWidth="160.0" />
+                    <ComboBox fx:id="conditionComboBox" promptText="Condition" prefWidth="140.0" />
+                </HBox>
+
+                <HBox alignment="CENTER" spacing="8.0">
+                    <Label text="THEN" styleClass="condition-label" />
+                    <ComboBox fx:id="targetDeviceComboBox" promptText="Target device" prefWidth="160.0" />
+                    <ComboBox fx:id="actionComboBox" promptText="Action" prefWidth="140.0" />
+                </HBox>
+
+                <Button fx:id="addRuleButton" text="Add Rule" onAction="#handleAddRule" />
+
+                <HBox alignment="CENTER" spacing="10.0">
+                    <Button fx:id="runRulesButton" text="Run All Rules Now" onAction="#handleRunRules" />
+                    <Button fx:id="removeRuleButton" text="Remove Selected" onAction="#handleRemoveRule" />
+                </HBox>
+
+            </VBox>
+        </center>
+
+        <bottom>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="bottom-bar">
+                <padding>
+                    <Insets top="10.0" bottom="10.0" left="20.0" />
+                </padding>
+                <Button fx:id="backButton" text="Back to Dashboard" onAction="#handleBack" />
+            </HBox>
+        </bottom>
+
+    </BorderPane>
+
+</StackPane>
