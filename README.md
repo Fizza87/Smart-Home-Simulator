@@ -1,3 +1,5 @@
+<img width="987" height="691" alt="garafe" src="https://github.com/user-attachments/assets/47c01202-f57f-43f8-b440-259842eee591" />
+<img width="983" height="695" alt="room" src="https://github.com/user-attachments/assets/62f54de9-ff89-4d61-a726-3bc3ba154890" />
 **Smart Home Simulator**
 
 A JavaFX desktop application that simulates the management and automation of smart devices inside a modern home — built as a comprehensive Object-Oriented Programming (OOP) project.
